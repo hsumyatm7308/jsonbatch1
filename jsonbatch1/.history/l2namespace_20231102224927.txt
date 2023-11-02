@@ -1,0 +1,18 @@
+=>Namespace 
+
+=>Exercise (Before Namespace)
+
+
+<?xml version="1.0"?>
+<Root> 
+       <product>
+            <name>Vehicle </name>
+            <type>EV Car </type>
+       </product>
+
+              <product>
+            <name> </name>
+            <description>  </description>
+            <price> </price>
+       </product>
+</Root>

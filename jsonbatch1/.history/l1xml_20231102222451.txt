@@ -1,0 +1,37 @@
+API (Application Programming Interface)
+
+=>XML (eXtensible Mark up language )
+eXtensible = exten our notation 
+Markup = Write using Markup 
+language = create ur own document 
+
+XML                                          HTML 
+describe data                                display data 
+no element(tag) rules (custom rules)         predefined rule (eg h1 - h6)
+
+eg.
+
+element 
+<aungaung> Somethidn Here </aungaung>
+
+atrribue 
+<aungaung attribue="hello"> Somethidn Here </aungaung>
+
+
+ဒီ ဒေတာက ဘာလဲဆိုတာကို ဖော်ပြမှာ 
+ဘာ language သုံးလဲ ဆိုတာကို focus 
+
+XML document = Describe Data (XML designed to describe data and focus on what data is )
+HTML  docuemnt          = Display data (HTML was designed to display data and focus on how data look )
+
+
+
+Product List                          Root Element (Parenent Element)
+
+Product                               Child of Root Element (Child Element)
+   Name                               child elements (root node)
+   Description                        child elements (root node)
+   Price                              child elements (root node)
+
+
+

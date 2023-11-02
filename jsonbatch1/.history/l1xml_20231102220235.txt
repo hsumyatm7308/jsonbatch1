@@ -1,0 +1,9 @@
+API (Application Programming Interface)
+
+=>XML (eXtensible Mark up language )
+eXtensible = exten our notation 
+Markup = Write using Markup 
+
+XML                                    HTML 
+describe data                          display data 
+no element rules (custom rules)         predefined rule (eg h1 - h6)

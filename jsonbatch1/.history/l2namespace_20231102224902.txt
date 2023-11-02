@@ -1,0 +1,19 @@
+=>Namespace 
+
+=>Exercise (Before Namespace)
+
+
+<?xml version="1.0"?>
+<Root> 
+       <product>
+            <name>Webstorm </name>
+            <description>html/css/js support  </description>
+            <price>$ 100 </price>
+       </product>
+
+              <product>
+            <name> </name>
+            <description>  </description>
+            <price> </price>
+       </product>
+</Root

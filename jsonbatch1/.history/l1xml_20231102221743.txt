@@ -1,0 +1,25 @@
+API (Application Programming Interface)
+
+=>XML (eXtensible Mark up language )
+eXtensible = exten our notation 
+Markup = Write using Markup 
+language = create ur own document 
+
+XML                                          HTML 
+describe data                                display data 
+no element(tag) rules (custom rules)         predefined rule (eg h1 - h6)
+
+eg.
+
+element 
+<aungaung> Somethidn Here </aungaung>
+
+atrribue 
+<aungaung> Somethidn Here </aungaung>
+
+
+ဒီ ဒေတာက ဘာလဲဆိုတာကို ဖော်ပြမှာ 
+ဘာ language သုံးလဲ ဆိုတာကို focus 
+
+XML document = Describe Data (XML designed to describe data and focus on what data is )
+HTML            = Display data (HTML was designed to display data and focus on how data look )
