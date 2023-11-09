@@ -1,0 +1,29 @@
+=>DTD 
+DTD stand for Document Type Definitions.
+
+
+=>DTD 
+1. DTD can defines what elements and attribute can be represents 
+2. DTD can defines Ordering & Nested of the element 
+3. DTD from SGML Syntax . (Standard Generalized Markup Langunage)
+
+=>Internal 
+<?xml version="1.0"?>
+<!DOCTYPE documentelement [Definations]>
+
+
+=>External 
+<?xml version="1.0"?>
+<!DOCTYPE rootelement SYSTEM "documentelement.dtd">
+
+
+=>DTD                               vs                  XSD 
+DTD is base on SGML syntax                              XSD are written in XML 
+DTD support limited Data Type                           XSD has wide range Data Type 
+DTD does not support namespace                          XSD support namespace
+DTD is not extensibe                                    XSD is extensibe 
+eg. <!DOCTYPE documentelement [Definations]>
+ (tag တစ်ခုတည်းမှာပဲ ရေးရလို့)
+
+
+9CU 

@@ -1,0 +1,9 @@
+=>DTD 
+DTD stand for Document Type Definitions.
+
+
+=>XSD 
+1. XSD can defines what elements and attribute can be represents 
+2. XSD can specifies the elements datatype 
+3. XSD decides the number of child elemments 
+4. XSD defines default value,fixed value, optional 

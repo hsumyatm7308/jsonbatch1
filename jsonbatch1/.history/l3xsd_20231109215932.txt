@@ -1,0 +1,14 @@
+xml formatter 
+
+
+
+=>XSD 
+XSD stand for XML Schema Definations 
+
+=>XML Validation 
+to check Syntax | Structure 
+(i) XSD - XML Schema Definations 
+(ii) DID - Document Type Definations
+
+
+Search on google => xml schema generator

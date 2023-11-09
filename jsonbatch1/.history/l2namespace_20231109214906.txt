@@ -44,5 +44,3 @@
 
 
 jsonformat.com 
-
-json mar namespace thone loh ma ya 
