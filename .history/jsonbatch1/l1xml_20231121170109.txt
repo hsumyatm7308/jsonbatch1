@@ -1,6 +1,5 @@
 API (Application Programming Interface)
-မတူညီတဲ့ ခရော့ဆိုက် ပလက်ဖောင်းတွေ တစ်ခုနဲ့တစ်ခု ဒေတာ ရယူဖို့ 
-different cross platform transfer data each other .
+မတူညီတဲ့ ခရော့ဆိုက် ပလက်ဖောင်းတွေ တစ်ခုနဲ့တစ်ခု ဒေတာ ရယူဖို့
 
 =>XML (eXtensible Mark up language )
 eXtensible = exten our notation 

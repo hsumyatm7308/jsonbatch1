@@ -1,0 +1,20 @@
+{
+    "firstname" : "kyaw",
+    "lastname" : "Zayar",
+    "age" : 15, 
+    "tax" : false,
+    "passport" :null,
+    "remark" : "loream is simply \"dummy text\" of the printing and typessting industry ",
+    "holiday" : ["Saturaday","Sunday"],
+    "qualify" : [
+        {"subject" : "myanmar" , "mark" : 80},
+        {"subject" : "english" , "mark" : 90},
+        {"subject" : "math" , "math" : 100}
+    ]
+ }
+
+ console.log(student);
+ console.log(student.firstname,student.lastname);
+ console.log(student.age,student.tax);
+ console.log(student.holiday,student.holiday[1]);
+ console.log(student.qualify,student.qualify[1].subject, student.qualify[1].mark);

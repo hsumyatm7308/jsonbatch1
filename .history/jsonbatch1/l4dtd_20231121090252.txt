@@ -54,8 +54,8 @@ product.dtd
     <!ELEMENT product(name,description,price,status)>
     <!ELEMENT name(#PCDATA)>
     <!ELEMENT description(#PCDATA)>
-    <!ELEMENT price(#CDATA)>    //Contain character data or Data on Unprased Characeter
-    <!ELEMENT status(#PCDATA)>  //Contain pharase character data
+    <!ELEMENT price(#CDATA)>    //Contain character data
+    <!ELEMENT status(#PCDATA)>  //pharase character data
 
 ]>
 <product>

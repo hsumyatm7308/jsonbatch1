@@ -1,6 +1,4 @@
 API (Application Programming Interface)
-မတူညီတဲ့ ခရော့ဆိုက် ပလက်ဖောင်းတွေ တစ်ခုနဲ့တစ်ခု ဒေတာ ရယူဖို့ 
-different cross platform transfer data each other .
 
 =>XML (eXtensible Mark up language )
 eXtensible = exten our notation 
@@ -10,11 +8,6 @@ language = create ur own document
 XML                                          HTML 
 describe data                                display data 
 no element(tag) rules (custom rules)         predefined rule (eg h1 - h6)
-
-
-=XML 
-Need to enclose name of key within double quotes (should not use single quiotes)
-
 
 eg.
 

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON.parse and JSON.stringify</title>
+    </head>
+    <body>
+     
+        <script type="text/javascript">
+            const student = '{"firstname" : "Kyaw","lastname" : "Zayar","age" : 15}'; //must be single line because of sting line
+
+            console.log(student);
+            console.log(typeof(student));
+
+            studentobj = JSON.parse(student);
+            
+            console.log(studentobj);
+            console.log(typeof(studentobj));
+
+            const staff = '{"firstname":"Hsu","lastname":"Mon","age":20}'
+
+            console.log(staff);
+            console.log(typeof(student));
+            
+        </script>
+        
+    </body>
+</html>

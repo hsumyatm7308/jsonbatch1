@@ -1,0 +1,9 @@
+{
+    "articles" : [
+        {
+            "title" : "This is new article 1",
+            "content" : "loream Ipsuljs;adjf;a akjfdasdif akdfjif ijidfji di0",
+            "rating" : 5
+        }
+    ]
+}
