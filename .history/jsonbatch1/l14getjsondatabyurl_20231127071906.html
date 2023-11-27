@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>openweathermap</title>
+    </head>
+    <body>
+        
+        <script type="text/javascript">
+            var xmlhttp = new XMLHttpRequest();
+            var url = `https://randomuser.me/api/`
+            xmlhttp.open('GET',url,false);
+            xmlhttp.send();
+
+            if(xmlhttp.readyState === 4 && xmlhttp.status === 200){
+                var result = xmlhttp.responseText;
+            }
+
+            console.log(result);
+            console.log(typeof result);
+            
+        </script>
+    </body>
+</html>;
