@@ -1,0 +1,22 @@
+=>CORS 
+Cross-origin Resource Sharing (CORS)
+
+-cors is a mechanism for integrating applications 
+-cors defines are loaded in one domain to interest with different domain 
+-cors allows client broswer to check with third-party servers (if request auth before data)
+-To protect cross-site request forgery(csrf)
+
+
+port တွေကို firewall တွေနဲ့ကာထားတယ်
+firewall ကို ဖြတ်ပြီး မှ အသံတွေဘာတွေ ဝင်တာ
+
+= Same-origin policy 
+
+URL                                                  Outcome                            Reason 
+http://dltbank.com/transer/create.html               Same Origin 
+http://dltbank.com/transer/repost/check.html         Same Origin                        Only path different 
+http://mm.dltbank.com/transer/repost/check.html      Different Origin                   Different protocol 
+http://tha.dltbank.com/transer/repost/check.html     Different Origin                   Different port (http:// is 80)
+http://news.dltbank.com:81/transer/repost/check.html Different Origin                   Different host 
+
+
