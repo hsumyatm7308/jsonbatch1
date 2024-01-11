@@ -1,0 +1,17 @@
+=>DTD 
+DTD stand for Document Type Definitions.
+
+
+=>DTD 
+1. DTD can defines what elements and attribute can be represents 
+2. DTD can defines Ordering & Nested of the element 
+3. DTD from SGML Syntax . (Standard Generalized Markup Langunage)
+
+=>Internal 
+</xml version="1.0"?>
+<!DOCTYPE documentelement [Definations]>
+
+
+=>External 
+</xml version="1.0"?>
+<!DOCTYPE documentelement SYSTEM "documentelement.dtd">

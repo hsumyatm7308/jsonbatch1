@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Object & JSON Object Literal Object</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+             
+             const employee = {
+                firstname:"Maung",
+                lastname : "Zaw",
+                "age" : 20,
+                'tax' :true,
+                getname:function(){
+                    return "I am "+ this.firstname + " " + this.lastname;
+                }
+             };
+
+             console.log(employee);
+             console.log(employee.firstname,employee.lastname);
+             console.log(employee.age,employee.tax);
+             console.log(employee.getname());
+
+
+             var student = {
+                "firstname" : "kyaw",
+                "lastname" : "Zayar",
+                "age" : 15, 
+                "tax" : false,
+                "passport" :null,
+                "remark" : "loream is simply \"dummy text\" of the printing and typessting industry ",
+                "holiday" : ["Saturaday","Sunday"],
+                "qualify" : [
+                    {"subject" : "myanmar" , "mark" : 80},
+                    {"subject" : "english" , "mark" : 90},
+                    {"subject" : "math" , "math" : 100}
+                ]
+             };
+
+        </script>
+    </body>
+</html>

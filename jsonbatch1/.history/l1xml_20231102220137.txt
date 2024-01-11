@@ -1,0 +1,6 @@
+API (Application Programming Interface)
+
+
+XML                         HTML 
+describe data               display data 
+no element rules (custom rules)           predefined rule (eg h1 - h6)

@@ -1,0 +1,11 @@
+=>CORS 
+Cross-origin Resource Sharing (CORS)
+
+-cors is a mechanism for integrating applications 
+-cors defines are loaded in one domain to interest with different domain 
+-cors allows client broswer to check with third-party servers (if request auth before data)
+-To protect cross-site request forgery(csrf)
+
+
+port တွေကို firewall တွေနဲ့ကာထားတယ်
+firewall ကို ဖြတ်ပြီး မှ အသံတွေဘာတွေ ဝင်တာ

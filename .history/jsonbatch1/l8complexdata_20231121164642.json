@@ -1,0 +1,71 @@
+{
+    "articles" : [
+        {
+            "title" : "This is new article 1",
+            "content" : "loream Ipsuljs;adjf;a akjfdasdif akdfjif ijidfji di0",
+            "rating" : 5
+        },
+        {
+            "title" : "This is new article 3",
+            "content" : "loream Ipsuljs;adjf;a akjfdasdif akdfjif ijidfji di0",
+            "rating" : 5
+        },
+        {
+            "title" : "This is new article 5",
+            "content" : "loream Ipsuljs;adjf;a akjfdasdif akdfjif ijidfji di0",
+            "rating" : 5
+        },
+        {
+            "title" : "This is new article 7",
+            "content" : "loream Ipsuljs;adjf;a akjfdasdif akdfjif ijidfji di0",
+            "rating" : 5
+        }
+    ],
+
+    "sports" : [
+        {
+            "title" : "This is new sport 2",
+            "content" : "loream Ipsuljs;adjf;a akjfdasdif akdfjif ijidfji di0",
+            "rating" : 5
+        },
+        {
+            "title" : "This is new sport 4",
+            "content" : "loream Ipsuljs;adjf;a akjfdasdif akdfjif ijidfji di0",
+            "rating" : 5
+        },
+        {
+            "title" : "This is new sport 6",
+            "content" : "loream Ipsuljs;adjf;a akjfdasdif akdfjif ijidfji di0",
+            "rating" : 5
+        },
+        {
+            "title" : "This is new sport 8",
+            "content" : "loream Ipsuljs;adjf;a akjfdasdif akdfjif ijidfji di0",
+            "rating" : 5
+        }
+    ],
+    
+    "stories" : [
+        {
+            "title" : "This is new stroy 2",
+            "content" : "loream Ipsuljs;adjf;a akjfdasdif akdfjif ijidfji di0",
+            "rating" : 5
+        },
+        {
+            "title" : "This is new stroy 4",
+            "content" : "loream Ipsuljs;adjf;a akjfdasdif akdfjif ijidfji di0",
+            "rating" : 5
+        },
+        {
+            "title" : "This is new stroy 6",
+            "content" : "loream Ipsuljs;adjf;a akjfdasdif akdfjif ijidfji di0",
+            "rating" : 5
+        },
+        {
+            "title" : "This is new stroy 8",
+            "content" : "loream Ipsuljs;adjf;a akjfdasdif akdfjif ijidfji di0",
+            "rating" : 5
+        }
+    ]
+
+}

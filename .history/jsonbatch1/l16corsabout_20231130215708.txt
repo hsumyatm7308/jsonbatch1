@@ -1,0 +1,5 @@
+=>CORS 
+Cross-origin Resource Sharing (CORS)
+
+-cors is a mechanism for integrating applications 
+-cors defines are loaded in one domain to interest with different domain 

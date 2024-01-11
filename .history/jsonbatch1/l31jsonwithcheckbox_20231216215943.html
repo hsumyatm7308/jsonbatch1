@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+<style>
+
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        width: 300px;
+        background-color: #f4f4f4;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h4>Choose Your Fav Colors</h4>
+        <div class="colorbox">
+            <ul class="list-group">
+
+            </ul>
+
+        </div>
+
+    </div>
+    <script type="text/javascript">
+         const getul = document.querySelector('.list-group');
+         var datas = `{"colors" :{"Red Color":true,"Green Color":false,"Blue Color":true,"White Color":false,"Black Color":true,"Pink Color":true,"Violet Color":fasle}}`;
+
+         console.log(datas)
+         var dataobjs = JSON.parse(datas);
+         console.log(dataobjs)
+         
+         console.log(dataobjs.colors);
+
+
+         
+
+
+         for(let key in dataobjs.colors){
+            console.log(key);
+            console.log(dataobjs.colors[key])
+
+
+            var status = dataobjs.colors[key] ? 'checked' : '';
+            var status = !dataobjs.colors[key] ? '' : 'checked';
+
+            var lis = `<li><input type="checkbox" id="" value="" /><lable>${key}</lable></li>`;
+            getul.innerHTML += lis;
+         }
+    </script>
+</body>
+
+</html>

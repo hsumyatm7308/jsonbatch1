@@ -1,0 +1,24 @@
+{
+    "articles" : [
+        {
+            "title" : "This is new article 1",
+            "content" : "loream Ipsuljs;adjf;a akjfdasdif akdfjif ijidfji di0",
+            "rating" : 5
+        },
+        {
+            "title" : "This is new article 3",
+            "content" : "loream Ipsuljs;adjf;a akjfdasdif akdfjif ijidfji di0",
+            "rating" : 5
+        },
+        {
+            "title" : "This is new article 5",
+            "content" : "loream Ipsuljs;adjf;a akjfdasdif akdfjif ijidfji di0",
+            "rating" : 5
+        },
+        {
+            "title" : "This is new article 7",
+            "content" : "loream Ipsuljs;adjf;a akjfdasdif akdfjif ijidfji di0",
+            "rating" : 5
+        }
+    ]
+}

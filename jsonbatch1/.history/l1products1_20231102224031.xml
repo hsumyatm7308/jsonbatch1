@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<productList> <--root element-->
+       <product>
+            <name> </name>
+            <description>  </description>
+       </product>
+</productList>

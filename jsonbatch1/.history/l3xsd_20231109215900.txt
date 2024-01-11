@@ -1,0 +1,12 @@
+xml formatter 
+
+
+
+=>XSD 
+XSD stand for XML Schema Definations 
+
+=>XML Validation 
+to check Syntax | Structure 
+
+
+Search on google => xml schema generator

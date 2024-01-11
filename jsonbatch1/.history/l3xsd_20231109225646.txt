@@ -1,0 +1,136 @@
+xml formatter 
+
+
+
+=>XSD 
+XSD stand for XML Schema Definations 
+
+=>XML Validation 
+to check Syntax | Structure 
+(i) XSD - XML Schema Definations 
+(ii) DID - Document Type Definations
+
+
+Search on google => xml schema generator
+https://www.freeformatter.com/xsd-generator.html#before-output
+
+
+=>XSD 
+1. XSD can defines what elements and attribute can be represents 
+2. XSD can specifies the elements datatype 
+3. XSD decides the number of child elemments 
+4. XSD defines default value,fixed value, optional 
+
+=> How to use XSD 
+XSD is written in XML 
+start with <schema> element to every XML 
+<schema> can contain some attribue, but must contain   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+
+=Syntax 
+
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+---------------
+--------------
+</xs:schema>
+
+
+<xs:element name="price" minOccurs="1" maxOccurs="unbounded" type="xs:integer" /> 
+
+
+minOccurs="0" mean not entities (ဘယ်လောက်ပါပါရ ထည့်လည်းရတယ် မထည့်လည်းရတယ်  )
+minOccurs="1" mean mandatory (အနည်းဆုံး တစ်ခု ပါကိုပါရမယ်)
+maxOccurs = "unbounded" mean infinite 
+<price>$150</price>
+
+
+
+
+
+
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="product" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="name"/>
+              <xs:element type="xs:string" name="type" minOccurs="0"/>
+              <xs:element type="xs:string" name="color" minOccurs="0"/>
+              <xs:element type="xs:string" name="price" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+
+<Root>
+    <product>
+        <name>iphone</name>
+        <type>gen 6</type>
+        <color>Red</color>
+        <price>$150</price>
+    </product>
+</Root>
+
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="product">
+        <xs:complexType>
+        <xs:sequence>
+            <xs:element name="productname" minOccurs="1" maxOccurs="unbounded" type="xs:string">
+            <xs:element name="unitprice" minOccurs="0" maxOccurs="2" type="xs:string">
+        
+        </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<product>
+    <productname>Food</productname>
+    <unitprice> $500 </unitprice>
+</product>
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<product>
+    <productname>Food</productname>
+    <unitprice> $500 </unitprice>
+</product>
+
+<?xml version="1.0" encoding="utf-8"?>
+<product>
+   <item>
+       <name>Food</productname>
+       <price> $500 </price>
+   </item>
+</product>
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="product">
+        <xs:complexType>
+        <xs:sequence>
+            <xs:element name="item" minOccurs="1" maxOccurs="unbounded">
+            <xs:complexType>
+             <xs:sequence>
+                 <xs:element name="name" minOccurs="1" maxOccurs="unbounded" type="xs:string">
+                 <xs:element name="price" minOccurs="0" maxOccurs="2" type="xs:unsignedByte">     
+            </xs:sequence>
+            </xs:complexType>
+        </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+
+
+
+unsignedByte

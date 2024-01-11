@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<productList> <--root element-->
+       <product>
+            <name>Webstorm </name>
+            <description>html/css/js support  </description>
+            <price> </price>
+       </product>
+
+              <product>
+            <name> </name>
+            <description>  </description>
+            <price> </price>
+       </product>
+</productList>

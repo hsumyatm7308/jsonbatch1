@@ -1,0 +1,6 @@
+API (Application Programming Interface)
+
+
+XML                         HTML 
+transfer data
+no element rules            predefined rule (eg h1 - h6)

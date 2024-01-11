@@ -1,0 +1,8 @@
+=>JSON (Javascript Object Notation )
+
+=JSON 
+Javascript Object Notation 
+Base on Text Format 
+Light-weighted 
+Does not support comments and namespace 
+NoSQL

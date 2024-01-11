@@ -1,0 +1,32 @@
+=>XPATH
+XPATH is syntax for defining path of the XML element 
+
+img/fav/favicon.png 
+
+=>Path Expressions                  Usages
+/                                   Select the root node 
+//                                  Select any node match the name 
+.                                   Select the current node 
+../                                 Select the parents node 
+[]                                  Specify the condition 
+@                                   Assess the attribute 
+count(),last(),text()               Functions 
+
+
+
+=>XML Document 
+<?xml version="1.0"?>
+<!DOCTYPE product SYSTEM "product.dtd">
+<product>
+   <name> Jetbrain </name>                      /product/name 
+   <description>Webstorm Editor</description>   /product/description
+   <price>$100</price>                          /product/price
+   <status>true</status>
+</product>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<class>
+    <s:students>
+    </s:students>
+
+</class>

@@ -1,0 +1,8 @@
+=>XPATH
+XPATH is syntax for defining path of the XML element 
+
+img/fav/favicon.png 
+
+=>Path Expressions                  Usages
+/                                   Select the root node 
+//                                  Select any node match the name 

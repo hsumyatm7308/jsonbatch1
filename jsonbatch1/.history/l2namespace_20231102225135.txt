@@ -1,0 +1,36 @@
+=>Namespace 
+
+=>Exercise (Before Namespace)
+
+
+<?xml version="1.0"?>
+<Root> 
+       <product>
+            <name>Vehicle </name>
+            <type>EV Car </type>
+       </product>
+
+        <product>
+            <name>T-Shirt </name>
+            <color>Red  </color>
+            <price> </price>
+       </product>
+</Root>
+
+
+=>Exercise (After Namespace)
+
+
+<?xml version="1.0"?>
+<Root> 
+       <v:product>
+            <v:name>Vehicle </v:name>
+            <v:type>EV Car </v:type>
+       </product>
+
+        <c:product>
+            <c:name>T-Shirt </c:name>
+            <c:color>Red  </c:color>
+            <price> </price>
+       </product>
+</Root>
