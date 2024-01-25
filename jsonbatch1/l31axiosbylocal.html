@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PoenWealther API with Axios</title>
+</head>
+
+<body>
+
+    <div id="btn">Click Me</div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script type="text/javascript">
+
+        //AJAX 
+        // initialize the HTTP Request
+
+
+        // var xmlhttp = new XMLHttpRequest();
+        // xmlhttp.open("GET", "l12sampledata.json", false); // fasle mean no synchronyce
+        // xmlhttp.send();
+
+        // if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+        //     var result = xmlhttp;
+
+        //     var result = xmlhttp.responseText;
+        //     console.log(result);
+
+        // }
+
+        // console.log(result);
+        // result = JSON.parse(result);
+        // console.log(result);
+        // console.log(result.weather);
+        // console.log(result.name);
+
+
+        // =>fetch( )
+        // Syntax
+        // fetch(url)
+        //     .then(response => response.json())
+        //     .catch(err => console.log(err));
+
+
+        // var url = "./l12sampledata.json";
+        // fetch(url).then(function (response) {
+
+        //     console.log(response);
+        //     console.log(response.headers.get('Content-type')); //application/json; charse
+        //     return response.json();
+        // }).then(function (data) {
+        //     console.log(data)
+
+        //     console.log(data);
+        //     // result = JSON.parse(data);
+        //     // console.log(data);
+        //     // console.log(data.weather);
+        //     // console.log(data.name);
+
+        // }).catch(function (err) {
+        //     console.log(err);
+
+        // })
+
+
+
+
+
+        // => $.ajax()
+
+        // = Syntax
+
+        // $.ajax({
+        //     url: link you will request
+        // }).done((data) => {
+        //     output
+        // }).fail({
+        //     error
+        // });
+
+
+        // var geturl = "./l12sampledata.json";
+
+        // $.ajax({
+        //     method: "GET",
+        //     url: geturl,
+        //     dataType: 'text'
+        // }).done((data) => {
+        //     console.log(data)
+        //     console.log(typeof data)
+        //     console.log(data);
+        //     console.log(data.weather);
+        //     console.log(data.name);
+        // }).fail(() => {
+        //     console.log("Error");
+        // });
+
+        // $.ajax({
+        //     method: "GET",
+        //     url: geturl,
+        //     dataType: 'text',
+        //     success: successfun
+        // });
+
+        // function successfun(data, status, xhr) {
+        //     console.log(data);
+        //     console.log(status);
+        //     console.log(xhr);
+        // }
+
+
+        // jQuery ajax Short Hand 
+        // $('#btn').click(() => {
+        //     $.get(geturl, output);
+        // })
+
+        // function output(data) {
+        //     console.log(data);
+        //     console.log(data.name);
+        // }
+
+
+
+
+        //=> axios 
+        //=>syntax
+
+        // axios.get(url).then(callback);
+        var geturl = "./l12sampledata.json";
+
+        // axios.get(geturl).then((response) => {
+        //     console.log(response);
+
+        //     console.log(typeof response)
+        //     console.log(response);
+        //     console.log(response.data.weather);
+        //     console.log(response.data.name);
+        // }).catch((err) => {
+        //     console.log(err);
+        // })
+
+        axios({
+            method: 'GET',
+            url: geturl
+        }).then((response) => {
+            console.log(response);
+
+            console.log(typeof response)
+            console.log(response);
+            console.log(response.data.weather);
+            console.log(response.data.name);
+        }).catch((err) => {
+            console.log(err);
+        })
+
+    </script>
+</body>
+
+</html>
+<!-- 
+AJAX (Asynchronous javascript and XML)
+No refresh 
+Can request external data or from a server 
+Can recieve external data or from a server 
+Can send data to a server  -->
+
+<!-- 
+4 means the request is done 
+200 means it's successful return 
+ -->
+
+
+<!-- 25AX -->

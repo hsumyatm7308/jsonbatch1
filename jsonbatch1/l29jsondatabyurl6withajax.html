@@ -29,6 +29,8 @@
         <button type="button" id="btn">Load Data</button>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
     <script type="text/javascript">
 
         var getdisplay = document.getElementById('display');
@@ -42,7 +44,29 @@
 
 
         function loaddata() {
-            var url = 'https://dummyjson.com/products';
+
+            var url = "https://api.chucknorris.io/jokes/random";
+
+            $.ajax({
+                method: "GET",
+                url: url,
+                dataType: 'json'
+
+            }).done((data) => {
+                console.log(data);
+
+                var html = `<img src="${data.icon_url}" />
+            <h3>${data.value}</h3>`;
+
+                getdisplay.innerHTML = html;
+
+
+            }).fail(() => {
+                console.log('Error')
+            });
+
+
+
             fetch(url).then(function (response) {
                 return response.json();
             }).then(function (data) {
