@@ -75,7 +75,7 @@
             console.log(datajson); // Corrected variable name
 
             var xmlhttp = new XMLHttpRequest();
-            var url = `http://localhost/jsonserver/l20server.php`;
+            var url = `http://localhost/myfolder/jsonserver/l20server.php`;
             xmlhttp.open("POST", url, true);
             xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             xmlhttp.send("datas=" + datajson);

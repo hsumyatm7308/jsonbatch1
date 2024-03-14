@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Git hub user</title>
+</head>
+<style>
+    body {
+        background: #f4f4f4;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+
+        max-width: 60vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: column;
+
+        padding: 10px;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="col-md-6 mx-auto">
+
+            <div class="card rounded-0">
+
+                <div class="card-header">
+                    <form id="form" action="" method="">
+                        <div class="form-group">
+                            <input type="text" name="search" id="search" class="form-control form-control-sm"
+                                placeholder="Search.." autocomplete="off" />
+
+                        </div>
+                    </form>
+
+                </div>
+
+                <div id="displayone" class="card-body">
+                    <!-- <img src="" class="rounded-circle" alt="">
+                    <h3 class="card-title">User Name</h3>
+                    <p class="class-subtitle">Hello World...</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">Repositores <span class="fw-bold">800</span></li>
+                        <li class="list-group-item">Followers : <span class="fw-bold">200</span></li>
+                        <li class="list-group-item">Following : <span class="fw-bold">300</span></li>
+                    </ul> -->
+                </div>
+
+                <div id="displaytwo" class="card-footer">
+                    <div class="dropdown float-end">
+                        <a href="javascript:void(0);" class="btn btn-success btn-sm rounded-0 dropdown-toggle"
+                            data-bs-toggle="dropdown">Repositories</a>
+
+                        <ul id="displaylistgroup" class="dropdown-menu">
+                            <li><a href="" class="dropdown-item" target="_blank">Sample Link</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+        const getdisplayone = document.getElementById('displayone');
+        const getdisplaytwo = document.getElementById('displaytwo');
+        const getdisplaylistgroup = document.getElementById('displaylistgroup');
+        const getform = document.getElementById('form');
+        const getsearch = document.getElementById('search');
+
+
+        getform.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const getusername = getsearch.value;
+
+
+
+            if (getusername) {
+                getresult("hsumyatm7308");
+                getsearch.value = '';
+            } else {
+                window.alert("Please enter a search value");
+            }
+
+
+        })
+
+        const url = `http://api.github/users/`;
+
+        function getresult(username) {
+
+            axios({
+                method: "GET",
+                url: url + username
+            }).then(response => {
+                console.log(response)
+                console.log(typeof response.data)
+
+
+                const { data } = response;
+
+                cardbodytodom(data);
+                getrepourl(username);
+
+            }).catch((err) => {
+                400
+                // console.log(err)
+
+                if (err.response.status === 404) {
+                    getdisplayone.innerHTML = `
+                      <div class="alert"> No Data Found !!! </div>
+                    `;
+
+
+                    getdisplaylistgroup.innerHTML = `<li><a href="javascript:void(0);" class="dropdown-item">No Data</a></li>`;
+                }
+            });
+        }
+
+        function cardbodytodom(user) {
+            console.log(user);
+
+            getdisplayone.innerHTML = `<div id="displayone" class="card-body">
+                    <img src="" class="rounded-circle" alt="">
+                    <h3 class="card-title">${user.name}</h3>
+                    <p class="class-subtitle">${user.bio}</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">Repositores <span class="fw-bold">${user.public_repos}</span></li>
+                        <li class="list-group-item">Followers : <span class="fw-bold">${user.followers}</span></li>
+                        <li class="list-group-item">Following : <span class="fw-bold">${user.following}</span></li>
+                    </ul>
+                </div>`
+        }
+
+
+
+        function getrepourl(username) {
+
+            $.ajax({
+                method: "GET",
+                url: url + user + `/repos`,
+                dataType: 'json'
+            }).done(data => {
+                console.log(data)
+
+                cardfootertodom(data);
+            }).fail(() => {
+                console.log('error')
+            })
+
+        }
+
+        function cardfootertodom(repositories) {
+
+            // console.log(repositories)
+            getdisplaylistgroup.innerHTML = '';
+
+            repositories.forEach(repository => {
+                // console.log(repository)
+
+                getdisplaylistgroup.innerHTML += ` <li><a href="${repository.html_url}" class="dropdown-item" target="_blank">Sample Link</a></li>`;
+
+            })
+        }
+    </script>
+</body>
+
+</html>
+
+
+<!--
+     Github Profile > Github Docs > Developers > REST API > USERS > Users > Get the anthenticated users
+
+Enter this url in broswer https://ap.github.com
+so you will see all available api route list 
+
+-->
+
+
+<!-- 14GH -->
