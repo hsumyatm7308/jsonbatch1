@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Async await</title>
+</head>
+<style>
+
+</style>
+
+<body>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+
+        function myfunone() {
+            return "Hello sir, i am myfunone";
+        }
+
+        async function myfuntwo() {
+            return "Hello sir, i am myfuntwo";
+        }
+
+        console.log(myfuntwo()); //Promise {<fulfilled>: 'Hello sir, i am myfuntwo'}
+
+
+        myfuntwo().then((reponse) => console.log(reponse)) //Hello sir, i am myfuntwo
+
+
+        async function myfunthree() {
+            const setpromise = new Promise((resolve, reject) => {
+                setTimeout(() => resolve("Hello World"), 3000);
+            });
+
+            // it involves aslo the last update from user
+            const response = await setpromise;
+            return response;
+        }
+
+        console.log(myfunthree()); // if we build promise by ourselves, not working   result = no
+
+        myfunthree()
+            .then((reponse) => console.log(reponse));
+
+
+
+        async function myfunfour() {
+            const setpromise = new Promise((resolve, reject) => {
+                setTimeout(() => resolve("Hello Earth"), 3000);
+            });
+
+            const error = true;
+
+            if (!error) {
+                const reponse = await setpromise;
+                return reponse;
+            } else {
+                await Promise.reject(new Error('Something went wrong!!!'));
+            }
+
+            // console.log(myfunfour()); // if we build promise by ourselves, not working   result = no
+        }
+
+        myfunfour()
+            .then((reponse) => console.log(reponse)).catch((err) => console.log(err));
+    </script>
+</body>
+
+</html>
